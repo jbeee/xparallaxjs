@@ -1,0 +1,13 @@
+ErrorDocument 401 default
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . demos/xparallax/index.html [L]
+
+ErrorDocument 404 default
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . demos/xparallax/index.html [L]

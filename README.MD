@@ -16,6 +16,9 @@ xparallax.js
 			- IE 11 w/Touch
 			- Opera w/ Touch
 
+	-pushstates added 
+			- requires serverside redirect: see the .htaccess file
+
 - this does not use any requestAnimation Frames.
 - 3D bug in the background via: http://codepen.io/jbeeio/pen/oHDrk
 
