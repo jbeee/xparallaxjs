@@ -18,3 +18,6 @@ xparallax.js
 
 - this does not use any requestAnimation Frames.
 - 3D bug in the background via: http://codepen.io/jbeeio/pen/oHDrk
+
+
+-scrollr.js and betterPar are included in this repository, so that one day I can integrate them
