@@ -4,26 +4,26 @@
 
 /* =========================== GENERIC STYLES ============================*/
 body{
-	height:100%; width:100%; 
-	  background-color: #c0392b;
+  height:100%; width:100%; 
+    background-color: #c0392b;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFC0392B', endColorstr='#FF34495E');
   background-image: -webkit-linear-gradient(left right, #c0392b 0%, #34495e 100%);
   background-image: -webkit-gradient(linear, left, right, from(#c0392b), to(#34495e));
   background-image: linear-gradient(to right left, #c0392b 0%, #34495e 100%);
   background-position: fixed;
-	}
+  }
 html{
-	height:100%;
-	width:100%;
-	position:relative;
-	font-size: 0.8em; 
-	line-height: 1.4;
-	font-family:Geneva, sans-serif;
-	letter-spacing:1px;
-	text-transform:uppercase;
-	margin:0px; padding:0px;
-	}
+  height:100%;
+  width:100%;
+  position:relative;
+  font-size: 0.8em; 
+  line-height: 1.4;
+  font-family:Geneva, sans-serif;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin:0px; padding:0px;
+  }
 
 .absC{position:relative;}
 .absCfHW{position:relative;height:100%;width:100%;}
@@ -40,38 +40,37 @@ html{
 
 /* ============== Templating ============== */
 
+.animateScroll
+{
+position:fixed;
+}
 #s0
 {
-  position:fixed;
   z-index: 10;
-  width: 2000px;
 }
 
 #s1
 {
-  position:fixed;
   z-index: 11;
-  width: 4000px;
 }
 
 #s2
 {
-  position:fixed;
   z-index: 12;
-  width: 6000px;
 }
 
 .testFont
 {
-	height:150px;
-	width:auto;
-	position:absolute;
-	font-size:100px;
+  height:150px;
+  width:auto;
+  position:absolute;
+  font-size:100px;
     font-family: 'Orbitron', sans-serif;
-	color:#ddd;
-	font-weight:bold;
-	letter-spacing:-2px;
+  color:#ddd;
+  font-weight:bold;
+  letter-spacing:-2px;
   z-index:10;
+   text-shadow: 2px 1px 3px #222;
 }
 
 .pgImage
@@ -83,33 +82,50 @@ html{
 
 .pgImage img
 {
-
+  height:100%;
 }
 
 .page
 {
-	position:absolute;
-	width:1500px;
-	height:800px;	
-	top:0px;
-	font-size:200px;
+  position:absolute;
+  top:0px;
   font-family: 'Orbitron', sans-serif;
-	font-weight:bold;
-	letter-spacing:-10px;
+  font-weight:bold;
+  letter-spacing:5px;
 }
 #p0
 {
-	background-color:#333;	
+  background-color:#333;  
 }
 
 #p2
 {
-	background-color:#333;	
+  background-color:#333;  
 }
 
 #p4
 {
-	background-color:#333;
+  background-color:#333;
+}
+
+.pStats
+{
+  font-size:10em;
+  letter-spacing:5px;
+  display:block;
+  margin-left:10%;
+  margin-top:20%;
+}
+
+
+.pStats a
+{
+  text-decoration:none;
+  font-size:200px;
+  color:#ddd;
+  font-weight:bold;
+  letter-spacing:3px;
+   text-shadow: 2px 1px 3px #222;
 }
 
 
@@ -125,15 +141,16 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: #bbb;
-	letter-spacing:1px;
-	font-family: 'Orbitron', sans-serif;
-	text-shadow: black 0.1em 0.1em 0.2em;
-	float: left;
-	display:block;
-    width: 16.6%;
+  letter-spacing:1px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size:2.5em;
+  float: left;
+  display:block;
+    width: 20%;
     margin-bottom: 0;
-	
-			  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, rgba(0,0,0,05) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
@@ -146,11 +163,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .navLiT:hover {
     text-decoration: none;
-	color:#999;
+  color:#999;
 }
 .navLiI
 {
-	position:relative;	
+  position:relative;  
 }
 
 
@@ -164,8 +181,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 nav ul li {display: inline;}
 .oldie nav a {margin: 0 0.7%;}
-	
-	
+  
+  
 #navMenuC
 {
   position:fixed;
@@ -182,10 +199,10 @@ box-shadow:         0px 1px 6px rgba(0, 0, 0, 0.74);
 
 #navImgC
 {
-	width:100%;
-	height:auto;
-	position:absolute;
-	top:-10px;
+  width:100%;
+  height:auto;
+  position:absolute;
+  top:-10px;
    -webkit-transition: top 0.3s ease-out;
   -moz-transition: top 0.3s ease-out;
   -o-transition: top 0.3s ease-out;
@@ -195,9 +212,9 @@ box-shadow:         0px 1px 6px rgba(0, 0, 0, 0.74);
 
 #navImg
 {
-	cursor:pointer;
-	margin-left:0;
-	width:1px;
+  cursor:pointer;
+  margin-left:0;
+  width:1px;
 }
 #navImgC:hover {
   top:0;
@@ -272,8 +289,8 @@ box-shadow:         0px 1px 6px rgba(0, 0, 0, 0.74);
   -webkit-transform: translateY(-25%); 
     -webkit-transform: translateZ(80px);  
 }
-	
-	
+  
+  
 
 @media (max-width: 1000px) {
   .testFont
@@ -283,6 +300,13 @@ box-shadow:         0px 1px 6px rgba(0, 0, 0, 0.74);
    .pages
   {
     font-size:50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav a 
+  {
+  font-size:1.5em
   }
 }
 
