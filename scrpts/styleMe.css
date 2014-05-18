@@ -25,74 +25,8 @@ html{
 	margin:0px; padding:0px;
 	}
 
-input, select, textarea { color: #222; }
-
-.imgResized {
-        max-width: 100% !important;
-		height: auto !important;
-    }
-
-::-moz-selection {
-     background:#aa4444;
-    text-shadow: none;
-}
-
-::selection {
-    background:#aa4444;
-    text-shadow: none;
-	color:#444;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-
-
-
-/* =========================== GLOBALS ============================*/
-.innrRTxt
-{
-	display:block;
-	background-color:#6FC;
-	color:#6FC;
-
-}
-
-.innrRTxt H1
-{
-	font-size:4em;
-}
 .absC{position:relative;}
 .absCfHW{position:relative;height:100%;width:100%;}
-
-
-.clr { clear: both; }
-
-.bgFSImg
-{
-	position:absolute;
-	top:0px;
-	left:0px;
-}
-
 
 .animateScroll
 {
@@ -108,21 +42,23 @@ textarea {
 
 #s0
 {
-  z-index: 1;
+  position:fixed;
+  z-index: 10;
   width: 2000px;
 }
 
 #s1
 {
-  z-index: 2;
+  position:fixed;
+  z-index: 11;
   width: 4000px;
 }
 
 #s2
 {
-  z-index: 3;
+  position:fixed;
+  z-index: 12;
   width: 6000px;
-  border-right:5px solid #F00;
 }
 
 .testFont
@@ -160,21 +96,20 @@ textarea {
   font-family: 'Orbitron', sans-serif;
 	font-weight:bold;
 	letter-spacing:-10px;
-  text-align:center;
 }
 #p0
 {
-	background-color:#639;	
-}
-
-#p1
-{
-	background-color:#6C9;	
+	background-color:#333;	
 }
 
 #p2
 {
-	background-color:#069;
+	background-color:#333;	
+}
+
+#p4
+{
+	background-color:#333;
 }
 
 
@@ -269,72 +204,6 @@ box-shadow:         0px 1px 6px rgba(0, 0, 0, 0.74);
 }
 
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
 
 
 /* ================================3D bee====================================== */
@@ -405,126 +274,15 @@ box-shadow:         0px 1px 6px rgba(0, 0, 0, 0.74);
 }
 	
 	
-	
-@media screen and (max-width: 800px {
 
-}
-/* =========================== IPAD Retina Fixes ============================*/
-/*@media screen and (min-width: 2500px{}} ============== */
-
-@media only screen and (max-width: 320px) {
-
-   body { font-size: 2em; }
-
-}
-
-@media (max-width: 480px) {
-  #tTest
+@media (max-width: 1000px) {
+  .testFont
   {
-    width:100%;
+    font-size:50px;
   }
-    #dTest
+   .pages
   {
-    width:100%;
+    font-size:50px;
   }
 }
 
-@media  screen and (max-width: 44em){
-	
-nav[role="full-horizontal"] {
-    ul > li {
-      width: 100%;
-}
-   
-/*================================= Print styles ========================================= */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-		margin:0px;padding:0px;
-    }
-
-    a,
-    a:visited {
-        text-decoration: none;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-        vertical-align: middle;
-		}
-    @page {
-        margin: 0.5cm;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-
-
-
-
-figure {
-margin: 0;
-display: block;
-}
-
-
-/******IE image issues: @media \0screen {img { width: auto;  }}
-/* for ie 8 */
-/*****NEED ME?
-
-
-
-html,body,div,span,applet,object,iframe,
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,
-a,abbr,acronym,address,big,cite,code,
-del,dfn,em,img,ins,kbd,q,s,samp,
-small,strike,strong,sub,sup,tt,var,
-b,u,i,center,
-dl,dt,dd,ol,ul,li,
-fieldset,form,label,legend,
-table,caption,tbody,tfoot,thead,tr,th,td,
-article,aside,canvas,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section,summary,
-time,mark,audio,video{
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  font:inherit;
-  vertical-align:baseline;
-}
-@charset "utf-8";
-/* CSS Document */

@@ -37,6 +37,14 @@ else if((/(iPhone|iPod|iPad)/i.test(userBrowser))){uBr=50;}
 
 
 
+function pPages(ps,pw,pt,pe)
+{
+	this.percentStart = ps;
+	this.percentWidth = pw;
+	this.pageTitle = pt;
+	this.parentElement = pe;
+}
+
 ////////////////////////////////////////////////////////////////////////////// PARALLAX FUNCTIONS
 $.xParallax  = function(sel) {
 
@@ -77,11 +85,12 @@ function scrollDims()
 
 	var posP1 = pgW*2;
 	var posP2 = pgW*5;
-	$('.page').css({'width':pgW+'px'});
-	$('#p1').css({'left':posP1+'px'});
-	$('#p2').css({'left':posP2+'px'});
-
-
+	$('.page').css({'width':pgW+'px', 'height':winH+'px'});
+	$('#p2').css({'left':posP1+'px'});
+	$('#p4').css({'left':posP2+'px'});
+	$('#s0').width(pgW);
+	$('#s1').width(pgW*4);
+	$('#s2').width(pgW*6);
 }
         
 scrollDims();
@@ -131,7 +140,7 @@ function tweenScroll()
 
 function updateScrollPos(nPercent)
 {
-	$('#dTest').html(nPercent*100);
+	$('#dTest').html((nPercent*100).toFixed(2)+' %');
 	$.each(elements, function(i, el) {var pos = Math.floor((el.width - winW) * nPercent) * -1; el.el.css('left', pos);});
 }
 
@@ -151,7 +160,7 @@ function finishScroll()
         var goTo = $(this).attr('href').replace('#p', '');
         letsGo(goTo);
         if (uBr > 9) {
-           //history.pushState('object or string', 'xparallax', '/xparallax/' + goTo);
+           history.pushState('object or string', 'xparallax', 'demos/xparallax/page' + goTo);
         }
     });
 
@@ -160,6 +169,7 @@ function finishScroll()
  {
  	
  	var where =((pWidth/5)*(goTo));
+
 
  	console.log(where);
  	 window.scrollTo(0,where); 
@@ -179,7 +189,7 @@ function getUserDims()
 	{
 		
 		winW = $(window).width();
-		pgW =  winW * 1.1; 	
+		pgW =  winW * 1.2; 	
 		winH = $(window).height();
 		docW = $( document ).width();
 		docH = $( document ).height();
