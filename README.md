@@ -2,7 +2,7 @@ xparallax.js
 ============
 #### parallax on the x-axis
 #### with tweening
-http://www.jbee.io/xparallax
+http://www.jbee.io/demos/xparallax
 - A horizontal parallax scroll derived from: http://www.pixxelfactory.net/jInvertScroll/
 
 - but built to function more cleanly on mobile
