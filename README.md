@@ -3,6 +3,7 @@ xparallax.js
 #### parallax on the x-axis
 #### with tweening
 http://www.jbee.io/demos/xparallax
+
 - A horizontal parallax scroll derived from: http://www.pixxelfactory.net/jInvertScroll/
 
 - but built to function more cleanly on mobile
@@ -21,11 +22,16 @@ http://www.jbee.io/demos/xparallax
 			
 			- Opera w/ Touch
 
-	-pushstates added 
+	*HTML5 push/pop states included
 			- requires serverside redirect: see the .htaccess file
 
-- this does not use any requestAnimation Frames.
-- 3D bug in the background via: http://codepen.io/jbeeio/pen/oHDrk
+- this does not use any requestAnimation Frames.	
+		- because it was initially created to be completely compatable with legacy browsers
+		- but it turned out that legacy browsers do not support ,,el{position:fixed},,
+		- a work in progress to overcome the issue can be seen here: https://github.com/jbeee/ttpScroll.js
+		- Even with the 3D element in the background, averages around 40fps
+
+- The 3D image in the background rotates via: http://codepen.io/jbeeio/pen/oHDrk
 
 
--scrollr.js and betterPar are included in this repository, so that one day I can integrate them
+-scrollr.js and betterPar are included in this repository as reference, so that one day I can integrate some of there functionality.

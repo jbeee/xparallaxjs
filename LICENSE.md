@@ -4,7 +4,9 @@
                             | |_) (/_ (/_ . | ()    {==}3
                            (|  http://jbee.io         Y       
 
- The MIT License (MIT)
+xparallax.js
+
+The MIT License (MIT)
 
 Copyright (c) 2014 Jana Byrne
 
