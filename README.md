@@ -2,7 +2,6 @@ xparallax.js
 ============
 #### parallax on the x-axis
 #### with tweening
-http://www.jbee.io/demos/xparallax
 
 - A horizontal parallax scroll derived from: http://www.pixxelfactory.net/jInvertScroll/
 
@@ -31,7 +30,6 @@ http://www.jbee.io/demos/xparallax
 		- a work in progress to overcome the issue can be seen here: https://github.com/jbeee/ttpScroll.js
 		- Even with the 3D element in the background, averages around 40fps
 
-- The 3D image in the background rotates via: http://codepen.io/jbeeio/pen/oHDrk
 
 
 -scrollr.js and betterPar are included in this repository as reference, so that one day I can integrate some of there functionality.
