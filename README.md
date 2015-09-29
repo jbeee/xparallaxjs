@@ -4,8 +4,8 @@ xparallax.js
 #### with tweening
 
 - A horizontal parallax scroll derived from: http://www.pixxelfactory.net/jInvertScroll/
+but built to function more cleanly on mobile and to be screensize agnostic.
 
-- but built to function more cleanly on mobile
 	* touch - swipe handling
 	* responsive 
 		Tested With
@@ -32,4 +32,4 @@ xparallax.js
 
 
 
--scrollr.js and betterPar are included in this repository as reference, so that one day I can integrate some of there functionality.
+-scrollr.js and betterPar are included in this repository as references.
